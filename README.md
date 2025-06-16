@@ -28,8 +28,8 @@ What It Includes
 - A homepage with a hero section
 - An about page
 - A working contact form using PHP
-- 
-  Future Plans
+
+Future Plans
 - Add my **education details**
 - Add a **skills section** with what I know
 - Add a list of **projects I’ve done**
