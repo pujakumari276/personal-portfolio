@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me | Puja</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    body {
+      background: #fff0f6;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      margin: 0;
+    }
+
+    .nav-bar {
+      background-color: #ffb6c1;
+      padding: 15px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      text-align: center;
+      z-index: 10;
+      box-shadow: 0 2px 5px #ffb6c155;
+    }
+
+    .nav-bar a {
+      text-decoration: none;
+      margin: 0 15px;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .about-container {
+      margin-top: 120px;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .profile-pic {
+      width: 280px;
+      height: 280px;
+      background: url('assets/images/profile.png') center/cover no-repeat;
+      border-radius: 50% 50% 45% 55% / 60% 40% 60% 40%;
+      animation: float 3s ease-in-out infinite;
+      box-shadow: 0 10px 20px rgba(255, 105, 180, 0.3);
+      margin: 20px;
+    }
+
+    .about-text {
+      max-width: 600px;
+      background: #fff8fb;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 5px 15px rgba(255, 182, 193, 0.2);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .about-text h2 {
+      color: #e91e63;
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      font-size: 1.1em;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .about-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav-bar">
+    <a href="index.php">Home</a>
+    <a href="about.html">About</a>
+    <a href="index.html#education">Education</a>
+    <a href="index.html#skills">Skills</a>
+    <a href="index.html#projects">Projects</a>
+    <a href="php/contact.php">Contact</a>
+  </nav>
+
+  <div class="about-container">
+    <div class="profile-pic"></div>
+    <div class="about-text">
+      <h2>Hey there, I’m Puja 👩‍💻</h2>
+      <p>I’m a Computer Science student who loves building beautiful and functional web experiences. </p>
+      <p>Tech-wise, I work with HTML, CSS, JS, PHP, Flask, and MySQL. I enjoy blending logic with creativity — and yes, debugging gives me joy! 🌸</p>
+      <p>My dream? To join a team solving real-world challenges with empathy, innovation, and impact. Let's build something amazing together. 💻✨</p>
+    </div>
+  </div>
+
+</body>
+</html>
